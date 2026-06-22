@@ -1,4 +1,6 @@
 function getWeather(){
+    alert("BUTTON WORKS!");
+}
     let city = document.getElementById("cityInput").value;
     let apiKey = "629f053dfbbab8a226e66f821b686c78";
 
