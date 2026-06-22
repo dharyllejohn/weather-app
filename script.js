@@ -5,7 +5,11 @@ function getWeather(){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
     .then(res => res.json())
     .then(data => {
+    <input type="text" id="cityInput" placeholder="Enter city...">
+    <button onclick="getWeather()">Search</button>
 
+    <div id="result"></div>
+        
         console.log(data);
 
         if(data.cod !== 200){
