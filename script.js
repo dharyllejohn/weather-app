@@ -6,7 +6,7 @@ function getWeather(){
     .then(res => res.json())
     .then(data => {
 
-        console.log(data); // 👈 CHECK MO ITO SA CONSOLE
+        console.log(data);
 
         if(data.cod !== 200){
             document.getElementById("result").innerHTML = "City not found or API error";
@@ -22,8 +22,5 @@ function getWeather(){
     .catch(error => {
         document.getElementById("result").innerHTML = "Error fetching data";
         console.log(error);
-    });
-} <p>Weather: ${data.weather[0].description}</p>
-        `;
     });
 }
